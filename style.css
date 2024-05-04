@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+body {
+  background-image: url(./images/orange.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2% 0 2% 0;
+}*/
+
+/*Header*/
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  width: 40%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #37b4d6;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.search {
+  width: 30%;
+}
+
+.search-span {
+  background-color: #2cbbdf;
+  border-radius: 1.8%;
+  padding: 0.3%;
+  color: #23515e;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-span img {
+  width: 40px;
+  height: 40px;
+}
+
+.login {
+  color: #0fbb87;
+  border-color: #0fbb87 ;
+  padding: 0.8%;
+  font-size: 1rem;
+  border-radius: 16.8%;
+  font-weight: 500;
+}
+
+/*Section-Banner*/
+.banner {
+  background-color: #37b4d6;
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
+  height: 60vh;
+  width: 80vw;
+}
+
+.promotions {
+  position: absolute;
+  margin: -22% 10%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #093679;
+}
+
+.access {
+  font-size: 1.5rem;
+  color: aliceblue;
+  background-color: #093679;
+  padding: 2%;
+  margin: 2% 0;
+  border-radius: 8%;
+}
+
+/*Section Contact*/
+.contact {
+  width: 100%;
+  display: flex;
+}
+
+.contact div.logo {
+  width: 30%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: flex-start;
+  margin: 2%;
+}
+
+.contact h2.title {
+  font-size: 1.2rem;
+}
+
+.contact img {
+  width: 15%;
+}
+
+.about-us {
+  background-color: #d3f3b6;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  padding: 2%;
+}
+
+.aboutus-text {
+  width: 35%;
+}
+
+.aboutus-text span {
+  display: flex;
+  font-weight: 500;
+  color: #093679;
+  font-size: 1.1rem;
+  padding: 1.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form {
+  background-color: #b8fae4;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  color: #093679;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.contact-form span {
+  margin-bottom: 2%;
+}
+
+.form-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-name, textarea {
+  background-color: antiquewhite;
+  border: none;
+  font-size: 0.8rem;
+}
+
+textarea {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea::placeholder {
+  color: #093679;
+  font-weight: 600;
+}
+
+.submit-form {
+  width: 30%;
+  border: 1% solid #093679;
+  background-color: #093679;
+  color: antiquewhite;
+  border-radius: 10%;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.card-presentation {
+  width: 60%;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
