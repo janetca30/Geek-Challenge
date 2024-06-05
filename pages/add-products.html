@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Monoton&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="../style.css">
   <title>Store</title>
 </head>
@@ -18,43 +19,55 @@
     <!--Header-->
     <header>
       <div class="logo">
-        <h2 class="title">Emily's Express</h2>
-        <img src="/images/logo.png" alt="logo">
+        <a class="logo-store" href="../index.html">
+          <h2 class="title-store">Emily's Express</h2>
+          <img class="img-store" src="/images/logo.png" alt="logo">
+        </a>
       </div>
     </header>
     <main>
-      <div class="form-add-products">
-        <form class="container-form" data-form>
-          <h3 class="add-h3">Store</h3>
-          <div class="form-field">
-            <label class="field-label" for="name">Name</label>
-            <input class="field-written" name="name" type="text" placeholder="Enter the product name" id="name" required data-name>
-          </div>
-          <div class="form-field">
-            <label class="field-label" for="image">Image</label>
-            <input class="field-written" name="image" type="url" placeholder="Enter URL image" id="image" required data-image>
-          </div>
-          <div class="form-field">
-            <label class="field-label" for="details">Details</label>
-            <input class="field-written" name="details" type="text" placeholder="Enter details product" id="details" required data-details>
-          </div>
-          <div class="form-field">
-            <label class="field-label" for="price">Price</label>
-            <input class="field-written" type="text" name="price" id="price" placeholder="Enter price product" required data-price>
-          </div>
-          <input class="form-button" type="submit">
-        </form>
-      </div>      
+      <section class="add-product">
+        <div class="form-add-products">
+          <form class="container-form" data-form>
+            <h3 class="add-h3">Store</h3>
+            <div class="form-field">
+              <label class="field-label" for="image">Image</label>
+              <input class="field-written" name="image" type="url" placeholder="Enter URL image" id="image" required
+                data-image>
+            </div>
+            <div class="form-field">
+              <label class="field-label" for="name">Name</label>
+              <input class="field-written" name="name" type="text" placeholder="Enter the product name" id="name"
+                required data-name>
+            </div>
+            <div class="form-field">
+              <label class="field-label" for="price">Price</label>
+              <input class="field-written" type="text" name="price" id="price" placeholder="Enter price product"
+                required data-price>
+            </div>
+            <div class="form-field">
+              <label class="field-label" for="details">Details</label>
+              <input class="field-written" name="details" type="text" placeholder="Enter details product" id="details"
+                required data-details>
+            </div>
+            <button class="form-button" type="submit">Add product</button>
+          </form>
+        </div>
+      </section>
     </main>
-          <!--Footer-->
+    <!--Footer-->
     <footer>
+      <div class="logo">
+        <h2 class="title">Emily's Express</h2>
+        <img src="/images/logo.png" alt="logo">
+      </div>
       <div class="card-presentation">
         <img src="/images/foot.png" width="70px">
         <p class="copiright">&copy; 2024 - Janet Calderon Acuña de Denis - All Rights Reserved</p>
       </div>
     </footer>
   </div>
-
+  <script type="module" src="../js/createProduct.js"></script>
 </body>
 
 </html>

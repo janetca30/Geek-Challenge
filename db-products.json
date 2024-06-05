@@ -1,57 +1,60 @@
 {
-  "products":[
+  "products": [
     {
-      "_id": 1,
-      "category": "electro",
-      "items":[
-        {
-          "id": 1,
-          "image": "https://i.imgur.com/lb3f5tU.jpg",
-          "name": "XIAOMI headphones",
-          "price": 8760.00,
-          "details": "Xiaomi Mijia Bluetooth 5.3 Wireless Headphones Noise Reduction HiFI Stereo Sound AP09"
-        },
-        {
-          "id": 2,
-          "image": "https://i.imgur.com/ZWh4v6f.jpg",
-          "name": "VATLTY tactical belt",
-          "price": 6985.00,
-          "details": "VATLTY New Mens Hard Tactical Belt, Metal Automatic Buckle, IPSC 1100D Gun Belt Nylon Military Belt Male Outdoor Sports Girdle"
-        },
-        {
-          "id": 3,
-          "image": "https://i.imgur.com/OjEfhZp.jpg",
-          "name": "Smartwatch clock",
-          "price": 37115.00,
-          "details": "2024 New NFC Smart Watch Men AMOLED Screen Always Time Display PK Ultra Series HK 8 Pro max Waterproof Smartwatch"
-        },
-        {
-          "id": 4,
-          "image": "https://i.imgur.com/LSr3rr3.jpg",
-          "name": "Dron",
-          "price": 11080.00,
-          "details": "E88 Drone Professional 4K HD Dual Camera LED Lighting Aerial Photography Omnidirectional Foldable RC FPV Toys Helicopter New"
-        },
-        {
-          "id": 5,
-          "image": "https://i.imgur.com/0fj3pAf.jpg",
-          "name": "BAIFEILI mic",
-          "price": 58990.00,
-          "details": "BAIFEILI C414 XLR Professional Condenser Microphone 25mm Diaphragm Cardioid Microphone for Broadcasting Podcasting Recording ASMR"
-        },
-        {
-          "id": 6,
-          "image": "https://i.imgur.com/m6HDId0.jpg",
-          "name": "Printer mini thermal",
-          "price": 12290.00,
-          "details": "Mini Portable 2 Inch Thermal Printer Pocket Receipt Printer Wireless Bluetooth 58mm for Android IOS Windows Maker"
-        }
-      ]
-    },  
+      "id": 1,
+      "image": "https://i.imgur.com/lb3f5tU.jpg",
+      "name": "XIAOMI headphones",
+      "price": "8760.00",
+      "details": "Xiaomi Mijia Bluetooth 5.3 Wireless Headphones Noise Reduction HiFI Stereo Sound AP09"
+    },
     {
-      "_id": 2,
-      "category": "make",
-      "items":[]
+      "id": 2,
+      "image": "https://i.imgur.com/ZWh4v6f.jpg",
+      "name": "VATLTY tactical belt",
+      "price": "6985.00",
+      "details": "VATLTY New Mens Hard Tactical Belt, Metal Automatic Buckle, IPSC 1100D Gun Belt Nylon Military Belt Male Outdoor Sports Girdle"
+    },
+    {
+      "id": 3,
+      "image": "https://i.imgur.com/OjEfhZp.jpg",
+      "name": "Smartwatch clock",
+      "price": "37115.00",
+      "details": "2024 New NFC Smart Watch Men AMOLED Screen Always Time Display PK Ultra Series HK 8 Pro max Waterproof Smartwatch"
+    },
+    {
+      "id": 4,
+      "image": "https://i.imgur.com/LSr3rr3.jpg",
+      "name": "Dron",
+      "price": "11080.00",
+      "details": "E88 Drone Professional 4K HD Dual Camera LED Lighting Aerial Photography Omnidirectional Foldable RC FPV Toys Helicopter New"
+    },
+    {
+      "id": 5,
+      "image": "https://i.imgur.com/0fj3pAf.jpg",
+      "name": "BAIFEILI mic",
+      "price": "58990.00",
+      "details": "BAIFEILI C414 XLR Professional Condenser Microphone 25mm Diaphragm Cardioid Microphone for Broadcasting Podcasting Recording ASMR"
+    },
+    {
+      "id": 6,
+      "image": "https://i.imgur.com/m6HDId0.jpg",
+      "name": "Printer mini thermal",
+      "price": "12290.00",
+      "details": "Mini Portable 2 Inch Thermal Printer Pocket Receipt Printer Wireless Bluetooth 58mm for Android IOS Windows Maker"
+    },
+    {
+      "id": 7,
+      "image": "https://i.imgur.com/Dl8f1Te.jpg",
+      "name": "Mini Keyboard",
+      "price": "14274.00",
+      "details": "K68 Mini Mechanical Gaming Keyboard Hot Swappable Blue/Red Switch 68 Keys 2.4G/BT5.0 PBT Keycaps"
+    },
+    {
+      "image": "https://i.imgur.com/mCaBR8Y.jpg",
+      "name": "Shaver",
+      "price": "886.00",
+      "details": "2023 Men's Hair Clipper Rechargeable Electric Machine Beard Shaver T9",
+      "id": 8
     }
   ]
 }

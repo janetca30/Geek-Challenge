@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Monoton&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
   <title>Emily's Express</title>
 </head>
@@ -22,67 +23,30 @@
         <img src="/images/logo.png" alt="logo">
       </div>
       <div class="search">
-        <span class="search-span">What do you want to search for? <img src="/images/search.png" alt="search"></span>
+        <input type="text" placeholder="What do you want to search for?" class="search-input" data-search>
+        <button class="search-button" data-button-search> <img src="/images/search.png" alt="search"></button>
       </div>
-      <button class="login">Login</button>
+      <!--<button class="login">Login</button>-->
     </header>
     <main>
-      <!--Section-Banner-->
-      <section class="banner">
-        <div class="image-container">
-          <img src="/images/bags.png" alt="bags">
-          <div class="promotions">
-            <h4 class="promo-text">Promotional December</h4>
-            <p class="promo-discounts">Selected products with 33% discount</p>
-            <button class="access">See Home</button>
-          </div>
-        </div>
-      </section>
       <!--Section-Product Gallery -->
       <section class="product-gallery">
-        <!--Electronic-->
-        <div class="electronic">
-          <div class="electro-title">
-            <h3 class="electro-h3">Electro</h3>
-            <a href="./pages/add-products.html"><img src="./images/add.png" alt="add"></a>
+        <div class="product-container">
+          <div class="product-title">
+            <h3 class="product-h3">Products</h3>
+            <a href="./pages/add-products.html"><img class="add-img" src="./images/add.png" alt="add">Add Products</a>
           </div>
-          <ul class="electro" alt="product-electro" data-list-electro>          
+          <ul class="product-list" alt="product-card" data-list>
           </ul>
-        </div>
-        <!--Make-Up-->
-        <div class="make-up"></div>
-        <!--Fans-->
-        <div class="fans"></div>
-      </section>
-      <!--Section-Contact-->
-      <section class="contact">
-        <div class="logo">
-          <h2 class="title">Emily's Express</h2>
-          <img src="/images/logo.png" alt="logo">
-        </div>
-        <div class="about-us">
-          <div class="aboutus-text">
-            <span>About Us</span>
-            <span>Privacy Policy</span>
-            <span>Loyalty Program</span>
-            <span>Our shops</span>
-            <span>I want to be a franchisee</span>
-            <span>Advertise here</span>
-          </div>
-          <div class="contact-form">
-            <span>Speak with us</span>
-            <div class="form-name">
-              <label for="name" class="f-name">Name</label>
-              <input id="name" type="text" class="f-name">
-            </div>
-            <textarea  id="message" placeholder="Write your message" rows="5" cols="50"></textarea>
-            <button id="submit" type="submit" value="submit-form" class="submit-form">Submit</button>
-          </div>
         </div>
       </section>
     </main>
     <!--Footer-->
     <footer>
+      <div class="logo">
+        <h2 class="title">Emily's Express</h2>
+        <img src="/images/logo.png" alt="logo">
+      </div>
       <div class="card-presentation">
         <img src="/images/foot.png" width="70px">
         <p class="copiright">&copy; 2024 - Janet Calderon Acuña de Denis - All Rights Reserved</p>
@@ -90,7 +54,7 @@
     </footer>
   </div>
   <script src="./js/showProducts.js" type="module"></script>
-  <script src="/main.js"></script>
+  <script type="module" src="./js/filterProducts.js"></script>
 </body>
 
 </html>

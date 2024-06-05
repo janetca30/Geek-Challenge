@@ -1,6 +1,6 @@
 import { connectionAPI } from "./connectionAPI.js";
 
-const listElectro = document.querySelector("[data-list-electro]");
+const list = document.querySelector("[data-list]");
 
 export default function createCard(image, name, price, details) {
   const product = document.createElement("li");
@@ -11,9 +11,17 @@ export default function createCard(image, name, price, details) {
     <div class="detail-product">
       <h3>${name}</h3>
       <h5>${details}</h5>
-      <span>Price: $ ${price.toFixed(2)}</span>
+      <span>Price: $ ${Number(price).toFixed(2)}</span>
+      <button class="delete-button">
+        <img src="../images/garbage.png" alt="delete-button">
+      </button>
     </div>
   </div>`;
+
+  const deleteButton = product.querySelector(".delete-button");
+  deleteButton.addEventListener("click", () => {
+    product.remove();
+  });
 
   return product;
 }
@@ -22,26 +30,11 @@ async function listProducts() {
   try {
     const listAPI = await connectionAPI.listProducts();
 
-    if (!listAPI || !Array.isArray(listAPI) || listAPI.length === 0) {
-      throw new Error("No products found");
-    }
+    listAPI.forEach(product =>list.appendChild(
+        createCard(product.image, product.name, product.price, product.details)));
 
-    // Iterate over the products in the "electro" category
-    const electroCategory = listAPI.find(category => category.category === "electro");
-
-    if (!electroCategory || !electroCategory.items || electroCategory.items.length === 0) {
-      throw new Error("No products found in the 'electro' category");
-    }
-
-    electroCategory.items.forEach(product => 
-      listElectro.appendChild(
-        createCard(product.image, product.name, product.price, product.details)
-      )
-    );
-
-  } catch (error) {
-    console.error(error);
-    listElectro.innerHTML = `<h2 class="message-error">Error: problem with connection :(</h2>`;
+  } catch {
+    list.innerHTML = `<h2 class="message-error">Error: problem with connection :(</h2>`;
   }
 }
 
