@@ -1,5 +1,5 @@
 async function listProducts(){
-  const connection = await fetch("http://localhost:3001/products");
+  const connection = await fetch("https://my-json-server.typicode.com/janetca30/geek-api/products");
   
   const convertedConnection = await connection.json();
   
@@ -7,7 +7,7 @@ async function listProducts(){
 }
 
 async function sendProduct(image, name, price, details ){
-  const connection = await fetch("http://localhost:3001/products", {
+  const connection = await fetch("https://my-json-server.typicode.com/janetca30/geek-api/products", {
     method: "POST",
     headers: {"Content-type": "application/json"}, 
     body: JSON.stringify({
@@ -26,7 +26,7 @@ async function sendProduct(image, name, price, details ){
 }
 
 async function lookingForProducts(keyword){
-  const connection = await fetch (`http://localhost:3001/products?q=${keyword}`);
+  const connection = await fetch (`https://my-json-server.typicode.com/janetca30/geek-api/products?q=${keyword}`);
   const convertedConnection = connection.json();
   return convertedConnection
 }
